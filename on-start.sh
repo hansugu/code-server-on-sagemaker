@@ -12,7 +12,7 @@ c.ServerProxy.servers = {
   'vscode': {
     'command': ['code-server', '--auth none', '--port {port}'],
     'timeout': 30,
-    'launcher_entry':{'title': 'Code Server'}
+    'launcher_entry':{'title': 'VS Code'}
   }
 }
 EOC
