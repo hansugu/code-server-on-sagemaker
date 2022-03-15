@@ -22,3 +22,6 @@ pip install jupyter-server-proxy
 jupyter labextension install @jupyterlab/server-proxy
 conda deactivate
 EOP
+
+## RESTART THE JUPYTER SERVER
+initctl restart jupyter-server --no-wait
