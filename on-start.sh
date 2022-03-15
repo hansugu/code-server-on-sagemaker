@@ -9,10 +9,17 @@ curl -fsSL https://code-server.dev/install.sh | sh
 
 cat >>/home/ec2-user/.jupyter/jupyter_notebook_config.py <<EOC
 c.ServerProxy.servers = {
-  'vscode': {
-    'command': ['code-server', '--auth none', '--port {port}'],
-    'timeout': 30,
-    'launcher_entry':{'title': 'VS Code'}
+  'code-server': {
+    'command': [
+      'code-server',
+        '--auth=none',
+        '--disable-telemetry',
+        '--bind-addr=localhost:{port}'
+    ],
+    'timeout': 20,
+    'launcher_entry': {
+      'title': 'VS Code'
+    }
   }
 }
 EOC
