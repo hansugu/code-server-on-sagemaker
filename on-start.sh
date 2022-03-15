@@ -31,4 +31,6 @@ conda deactivate
 
 EOF
 
+yum install -y htop
+
 reboot
