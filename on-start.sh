@@ -14,7 +14,8 @@ c.ServerProxy.servers = {
       'code-server',
         '--auth=none',
         '--disable-telemetry',
-        '--bind-addr=localhost:{port}'
+        '--bind-addr=localhost:{port}',
+        '--user-data-dir=/home/ec2-user/SageMaker/.vscode'
     ],
     'timeout': 20,
     'launcher_entry': {
